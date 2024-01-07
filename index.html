@@ -1,1 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSite</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /* font-family: 'Arial'; */
+        }
+
+        body {
+            font-family: 'Segoe UI';
+        }
+
+        header {
+            display: flex;
+        }
+
+        /* .logo {
+            height: 75px;
+            width: 75px;
+            background-color: rgba(0, 0, 0, 0.838);
+            color: yellow;
+            text-align: center;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            /* border: 2px solid; 
+            margin-left: 350px;
+            margin-top: 10px;
+            margin-right: 10px;
+            border-radius: 50%;
+        }
+
+        .logo:hover {
+            transform: rotateZ(45deg);
+         } */
+
+        .logo {
+            margin-top: 20px;
+
+            margin-left: 100px;
+        }
+
+        .heading {
+            margin-top: 15px;
+        }
+
+        .heading p {
+            font-size: 9px;
+            color: rgb(98, 88, 88);
+        }
+
+        .heading h3 {
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin-top: 39px;
+            /* font-weight: bold; */
+            margin-left: 702px;
+            color: rgb(68, 64, 64);
+            gap: 30px;
+            font-size: 19px;
+            font-weight: 400;
+        }
+
+        main h2 {
+            font-size: 35px;
+            font-weight: 300;
+            text-align: center;
+            /* margin-top: 50px; */
+        }
+
+        main p {
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .content {
+            border: 2px solid transparent;
+            ;
+            height: 200px;
+            width: 70vw;
+            margin-top: 90px;
+            /* padding: 50px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .content button {
+            width: 270px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-transform: uppercase;
+            color: white;
+            background-color: rgb(90, 200, 225);
+            border-radius: 3px;
+            border: none;
+        }
+
+        .content button:hover {
+            transform: scale(1.1);
+            transition: ease 0.25s;
+        }
+
+        .img {
+            position: relative;
+            ;
+            bottom: 12px;
+        }
+
+
+        .container {
+            width: 1000px;
+            height: 750px;
+
+            /* border: 2px solid black; */
+            display: grid;
+            grid-template-columns: 300px 355px 300px;
+            grid-template-rows: 170px 198px 170px;
+
+            background-color: white;
+            justify-items: center;
+            align-items: center;
+            /* gap:15px;   */
+            /* row-gap: 1px;   
+        column-gap: 1px;; */
+            margin-top: 100px;
+            margin-left: 150px;
+        }
+
+        .item {
+            width: 275px;
+            height: 130px;
+            /* border:2px solid rgb(6, 6, 6); */
+            padding-top: 20px;
+            padding-right: 14px;
+            padding-bottom: 10px;
+            padding-left: 14px;
+            background-color: #f9f9f9;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btns button {
+            border: none;
+            border-radius: 5px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .heading {
+                margin-top: 20px;
+            }
+
+            nav ul {
+                margin-left: 0;
+            }
+
+            .content {
+                width: 90vw;
+            }
+
+            /* .logo {
+                height: 50px;
+                width: 50px;
+                background-color: rgba(0, 0, 0, 0.838);
+                color: yellow;
+                text-align: center;
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                /* border: 2px solid; 
+                margin-left: 35px;
+                margin-top: 10px;
+                margin-right: 10px;
+                border-radius: 5px;
+            } */
+
+
+            main h2 {
+                font-size: 15px;
+                font-weight: 300;
+                text-align: center;
+                /* margin-top: 50px; */
+            }
+        }
+
+        .item {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .item b {
+            position: relative;
+            bottom: 18px;
+        }
+
+        nav ul svg {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        .content h1{
+             font-size: 59px;
+             font-weight: 400;
+             margin-top : 73px;
+             line-height: 1.3em;
+        }
+
+        .para{
+            width:83%;
+        }
+
+        .para p{
+            font-size: 30px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <div class="logo">
+            <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-1.webp" width="230" height="70"
+                alt="UltraEdit" id="logo" data-height-percentage="58" data-actual-width="259" data-actual-height="83">
+        </div>
+
+        <nav>
+            <ul>
+                <li>Products<svg fill="#000000" height="10px" width="10px" version="1.1" id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 330 330" xml:space="preserve">
+                        <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393
+                   c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393
+                   s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z" />
+                    </svg></li>
+                <li>Pricing<svg fill="#000000" height="10px" width="10px" version="1.1" id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 330 330" xml:space="preserve">
+                        <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393
+                   c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393
+                   s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z" />
+                    </svg></li>
+                <li>Resources<svg fill="#000000" height="10px" width="10px" version="1.1" id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 330 330" xml:space="preserve">
+                        <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393
+                   c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393
+                   s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z" />
+                    </svg></li>
+                <li>About Us<svg fill="#000000" height="10px" width="10px" version="1.1" id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 330 330" xml:space="preserve">
+                        <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393
+                   c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393
+                   s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z" />
+                    </svg></li>
+                <li class="img"><img
+                        src="https://img.freepik.com/premium-vector/language-translation-icon-translation-chat-bubbles-line-sign-translate-service-element-stock-vector-template-eps-10_158224-358.jpg"
+                        alt="" width="40px"></li>
+            </ul>
+        </nav>
+
+
+    </header>
+    <main>
+        <div class="content">
+            <h1>Download <b>UltraEdit</b> for Windows <img
+                    src="https://www.ultraedit.com/wp-content/uploads/2022/10/Reviews.png"" alt="" width=" 112"
+                    height="32"></h1>
+            <div class="para">
+                <p>
+                    Download and try UltraEdit before you try it! This Download includes full Windows version of the text
+                    editor.
+                </p>
+            </div>
+            
+
+            <button>
+                Download mac or linux version
+            </button>
+        </div>
+        <div class="wrapper">
+            <div class="container">
+                <div class="item">
+                    <b>English</b>
+                    <div class="btns">
+                        <button
+                            style="background-color: #00b6d1;color: #fff;min-height: 10px;padding: 8px 15px!important ">Download
+                            32-bit</button>
+                        <button
+                            style="background-color: #5cb85c;;color: #fff;min-height: 10px ;padding: 8px 15px!important">Download
+                            64-bit</button>
+                    </div>
+
+                </div>
+                <div class="item"> <b>Deutch</b>
+                    <div class="btns">
+                        <button
+                            style="background-color: #00b6d1;color: #fff;min-height: 10px;padding: 8px 15px!important ">Download
+                            32-bit</button>
+                        <button
+                            style="background-color: #5cb85c;;color: #fff;min-height: 10px ;padding: 8px 15px!important">Download
+                            64-bit</button>
+                    </div>
+                </div>
+                <div class="item"> <b>Italiano</b>
+                    <div class="btns">
+                        <button
+                            style="background-color: #00b6d1;color: #fff;min-height: 10px;padding: 8px 15px!important ">Download
+                            32-bit</button>
+                        <button
+                            style="background-color: #5cb85c;;color: #fff;min-height: 10px ;padding: 8px 15px!important">Download
+                            64-bit</button>
+                    </div>
+                </div>
+                <div class="item"> <b>Español</b>
+                    <div class="btns">
+                        <button
+                            style="background-color: #00b6d1;color: #fff;min-height: 10px;padding: 8px 15px!important ">Download
+                            32-bit</button>
+                        <button
+                            style="background-color: #5cb85c;;color: #fff;min-height: 10px ;padding: 8px 15px!important">Download
+                            64-bit</button>
+                    </div>
+                </div>
+                <div class="item"> <b>Português brasileiro</b>
+                    <div class="btns">
+                        <button
+                            style="background-color: #00b6d1;color: #fff;min-height: 10px;padding: 8px 15px!important ">Download
+                            32-bit</button>
+                        <button
+                            style="background-color: #5cb85c;;color: #fff;min-height: 10px ;padding: 8px 15px!important">Download
+                            64-bit</button>
+                    </div>
+                </div>
+                <div class="item"> <b>français</b>
+                    <div class="btns">
+                        <button
+                            style="background-color: #00b6d1;color: #fff;min-height: 10px;padding: 8px 15px!important ">Download
+                            32-bit</button>
+                        <button
+                            style="background-color: #5cb85c;;color: #fff;min-height: 10px ;padding: 8px 15px!important">Download
+                            64-bit</button>
+                    </div>
+                </div>
+                <div class="item"> <b>français</b>
+                    <div class="btns">
+                        <button
+                            style="background-color: #00b6d1;color: #fff;min-height: 10px;padding: 8px 15px!important ">Download
+                            32-bit</button>
+                        <button
+                            style="background-color: #5cb85c;;color: #fff;min-height: 10px ;padding: 8px 15px!important">Download
+                            64-bit</button>
+                    </div>
+                </div>
+                <div class="item"> <b>français</b>
+                    <div class="btns">
+                        <button
+                            style="background-color: #00b6d1;color: #fff;min-height: 10px;padding: 8px 15px!important ">Download
+                            32-bit</button>
+                        <button
+                            style="background-color: #5cb85c;;color: #fff;min-height: 10px ;padding: 8px 15px!important">Download
+                            64-bit</button>
+                    </div>
+                </div>
+                <div class="item"> <b>français</b>
+                    <div class="btns">
+                        <button
+                            style="background-color: #00b6d1;color: #fff;min-height: 10px;padding: 8px 15px!important ">Download
+                            32-bit</button>
+                        <button
+                            style="background-color: #5cb85c;;color: #fff;min-height: 10px ;padding: 8px 15px!important">Download
+                            64-bit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
